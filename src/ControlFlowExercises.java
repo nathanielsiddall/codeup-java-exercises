@@ -1,6 +1,30 @@
 import java.util.Scanner;
 
 public class ControlFlowExercises {
+    private static void Grades() {
+        System.out.println("what is the grade number?");
+        Scanner sc = new Scanner(System.in);
+        int grade = Integer.parseInt(sc.nextLine());
+
+        if (grade > 100 || grade < 0){
+            System.out.println("thats not a valid number");}
+        else if (grade > 88){
+            if (grade > 95){System.out.println("you got an A+");}
+            else {System.out.println("You Got an A");}}
+        else if (grade > 80){
+            if (grade > 85){System.out.println("You Got an +");}
+            else {System.out.println("You Got an B");}}
+        else if (grade > 67){ System.out.println("You Got an C");}
+        else if (grade > 60){System.out.println("You Got an D");}
+        else if (grade > 59){System.out.println("You Got an F");}
+        else if (grade < 59){System.out.println("Just get out");}
+    }
+    private static void Thingy() {
+
+
+
+    }
+
     public static void main(String[] args) {
 //        int x = 1;
 //        int i = 0;
@@ -45,29 +69,13 @@ public class ControlFlowExercises {
 //            System.out.println("   " + i + "   |    " +  square  + "   |    " + cube + "  ");
 //
 //        }
+        Grades();
+        Thingy();
 
 
 
     }
 
-    public static void Grades(String[] args) {
-        System.out.println("what is the grade number?");
-        Scanner sc = new Scanner(System.in);
-        int grade = Integer.parseInt(sc.nextLine());
-
-        if (grade > 100 || grade < 0){
-            System.out.println("thats not a valid number");}
-        else if (grade > 88){
-            if (grade > 95){System.out.println("you got an A+");}
-            else {System.out.println("You Got an A");}}
-        else if (grade > 80){
-            if (grade > 85){System.out.println("You Got an +");}
-            else {System.out.println("You Got an B");}}
-        else if (grade > 67){ System.out.println("You Got an C");}
-        else if (grade > 60){System.out.println("You Got an D");}
-        else if (grade > 59){System.out.println("You Got an F");}
-        else if (grade < 59){System.out.println("Just get out");}
-    }
 
 }
 
