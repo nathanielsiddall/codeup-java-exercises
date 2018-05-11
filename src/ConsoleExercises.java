@@ -21,5 +21,7 @@ public class ConsoleExercises {
 
 
         System.out.println("your number was: " + length);
+
+        System.out.println();
     }
 }
