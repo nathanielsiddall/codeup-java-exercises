@@ -1,18 +1,28 @@
 package Movie;
 
-public class Movie {
 
-    public String name;
-    public String category;
 
-    public Movie(String filmName, String filmCategory){
-        name = filmName;
-        category = filmCategory;
+ public class Movie {
+    String name;
+    String category;
+
+   public String getName(){
+        return name;
     }
-
-    public static String getMovieData(Movie) {
-        String data = Movie.name + Movie.category;
-        return data;
-
+   public String getCategory(){
+        return category;
     }
-}
+     public void setName(String name) {
+         this.name = name;
+     }
+
+     public void setCategory(String category) {
+         this.category = category;
+     }
+
+     public Movie(){
+
+     }
+ }
+
+
