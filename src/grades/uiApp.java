@@ -4,6 +4,7 @@ public class uiApp extends newStudent  {
 
     private Object keys;
 
+
     uiApp() {
         super("", 0);
     }
@@ -11,6 +12,13 @@ public class uiApp extends newStudent  {
 
     public void setKeys(Object input){
          keys = input;
+
+//         public void setName(String input){
+//             String name = input;
+//        }
+    }
+    public String sendName(String input){
+        return input;
     }
 
     public void ui(){
@@ -30,6 +38,7 @@ public class uiApp extends newStudent  {
             case "-grade":
                 System.out.println(keys);
                String gradeName = getData("What Student?");
+               sendName(gradeName);
 
 //                System.out.println(getGrade());
                 ui();
